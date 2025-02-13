@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #caa897;
+}
+
+/* .main {
+  width: 100%;
+  padding: 0px;
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: linear-gradient(to right, #c68761, #caa897);
+  border-bottom: 4px solid #7a4e32;
+  flex-wrap: wrap;
+}
+
+.utopia h1 {
+  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-text p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.profile-img {
+  height: 70px;
+  border-radius: 60px;
+}
+
+.sub-title {
+  text-align:;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.background {
+  position: relative;
+  
+}
+
+.background-img {
+
+    display: block;
+    width: 100%; /* Ensures it fits within the parent container */
+    max-width: 100vw; /* Prevents it from exceeding the viewport width */
+    min-height: 70vh; /* Keeps the height proportional */
+    object-fit: cover; /* Ensures it covers the entire space without stretching */
+    /* overflow: hidden; Prevents overflow issues */
+    
+
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0px;
+  font-size: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 40px 40px 0px 40px;
+  text-align: left;
+  word-wrap: break-word;
+  overflow: hidden;
+  opacity: 1;
+  font-size: clamp(2rem, 2vw, 2rem);
+  margin-bottom: 0px;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+
+}
+
+.overlay p{
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        font-size: 1.2rem; /* Slightly reduce font size for better fit */
+        padding: 15px;
+    }
+}

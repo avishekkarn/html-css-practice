@@ -1,48 +1,45 @@
 
-.poem-main{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px;
+
+
+.poem-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
-.poem-section{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: right;
+.poem-header{
     text-align: center;
-
-}
-
-.heading-section{
-    margin: 20px;
     padding: 20px;
-
-}
-
-.heading-section h2{
-    font-size: 30px;
-}
-
-.poem{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 25px;
     
 }
 
-.poem-photo{
-    display: flex;
+.poem-header h2{
+    font-size: 2rem;
+}
+
+.poem-header p{
+    font-size: 0.4rem;
+}
+
+.poem-content{
+    gap: 10px;
     justify-content: center;
-    margin-left: 20px;
-    
+    text-align: center;
+}
+.poem{
+    padding: 20px;
 }
 
-.poem-photo img{
-    width: 100%;
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    object-fit: contain;
+}
+
+.image img{
+    width: 50%;
     height: auto;
-    border-radius: 100px;
+    object-fit: contain;
+    margin: 20px;
 }
